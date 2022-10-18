@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here]()
-- Live Site URL: [live site URL here](https://mcselle.github.io/frontendMentor_advice-generator-app/)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/advice-generator-html-css-js-C50zhn_HiK)
+- Live Site URL: [live site](https://mcselle.github.io/frontendMentor_advice-generator-app/)
 
 ## My process
 
