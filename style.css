@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-blue-0: rgba(32, 38, 50, 255);
+  --clr-blue-1: rgba(49, 58, 73, 255);
+  --clr-primary: rgba(79, 236, 160, 255);
+  --clr-text: rgba(206, 226, 233, 255);
+  --clr-primary-highlight: rgba(83, 255, 171, 255);
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--clr-text);
+  background-color: var(--clr-blue-0);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card{
+  margin: 1em;
+  padding: 2em;
+  background-color: var(--clr-blue-1);
+  border-radius: 1em;
+  max-width: 550px;
+  min-width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+h1{
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: .3em;
+  
+}
+
+p{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+button{
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  padding: 1.5em;
+  position: absolute;
+  transform: translate(-50%,0);
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--clr-primary-highlight);
+  box-shadow: 0px 0 4em 3px var(--clr-primary-highlight);
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.divider{
+  margin: 1em 0 1.5em 0;
+}

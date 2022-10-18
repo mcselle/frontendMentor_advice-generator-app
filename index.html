@@ -15,6 +15,8 @@
     href="./images/favicon-32x32.png"
   >
 
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Advice generator app</title>
 
   <script src="app.js" defer></script>
@@ -23,13 +25,23 @@
 
 <body>
 
-  Advice # <span id="adviceId"></span>
-  <!-- Advice ID goes here -->
+  <main>
+    <div class="card">
+      <h1> Advice #<span id="adviceId"></span></h1>
+      <p id="advice"></p>
+      <div class="divider">
+        <picture>
+          <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 550px)">
+          <img src="images/pattern-divider-mobile.svg" alt="divider">
+        </picture>
+      </div>
 
-  "
-  <p id="advice"></p>
-  <!-- Advice text goes here -->"
+      <button onclick="refresh()">
+        <img src="images/icon-dice.svg" alt="dice image">
+      </button>
 
+    </div>
+  </main>
 </body>
 
 </html>
