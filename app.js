@@ -2,8 +2,6 @@ const apiURL = "https://api.adviceslip.com/advice";
 const adviceText = document.getElementById('advice');
 const adviceId = document.getElementById('adviceId');
 
-refresh();
-
 async function refresh(){
   const response = await fetch(apiURL);
   const data = await response.json();
@@ -11,3 +9,5 @@ async function refresh(){
   adviceText.innerText = `"${data.slip.advice}"`:
   adviceId.innerText = `${data.slip.id}`;
 }
+
+refresh();
