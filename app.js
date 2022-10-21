@@ -4,11 +4,10 @@ const adviceId = document.getElementById('adviceId');
 
 refresh();
 
-function refresh(){
-  fetch(apiURL).then((response) => {
-    return response.json();
-  }).then((data) => {
-    adviceText.innerText ="\""+ data['slip']['advice'] +"\""
-    adviceId.innerText = data['slip']['id']
-  })
+async function refresh(){
+  const response = await fetch(apiURL);
+  const data = await response.json();
+  
+  adviceText.innerText = `"${data.slip.advice}"`:
+  adviceId.innerText = `${data.slip.id}`;
 }
